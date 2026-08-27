@@ -271,7 +271,7 @@ h1 {
   border: 1px solid var(--line);
   border-left: 3px solid var(--blue);
   border-radius: 10px;
-  text-align: left;
+  text-align: center;
 }
 
 .hero-banner p {
