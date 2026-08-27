@@ -247,6 +247,36 @@ h1 {
   line-height: 1.55;
 }
 
+/* ---------- Hero proof points ---------- */
+
+.hero-proof-points {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 28px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-proof-points li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555c65;
+  font-size: 14px;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.hero-proof-points li::before {
+  content: "✓";
+  color: var(--blue);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+}
+
 /* ---------- Hero banner strip ---------- */
 
 .hero-banner {
@@ -895,6 +925,13 @@ h1 {
 
   .hero-copy > p {
     font-size: 15.5px;
+  }
+
+  .hero-proof-points {
+    display: grid;
+    justify-items: center;
+    gap: 9px;
+    margin-top: 18px;
   }
 
   .hero-banner {
