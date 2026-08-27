@@ -522,9 +522,10 @@ h1 {
 /* ---------- Qualify checklist ---------- */
 
 .qualify-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px 40px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -534,10 +535,12 @@ h1 {
   display: flex;
   align-items: flex-start;
   gap: 10px;
+  flex: 0 1 auto;
   color: var(--ink);
   font-size: 15px;
   font-weight: 500;
   line-height: 1.45;
+  text-align: left;
 }
 
 .qualify-list li::before {
@@ -879,7 +882,8 @@ h1 {
   }
 
   .qualify-list {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
   }
 
   .authority-card {
