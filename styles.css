@@ -801,6 +801,24 @@ h1 {
   border-color: #6a86b0;
 }
 
+.closing-cta-alt-link {
+  display: block;
+  width: fit-content;
+  margin: 18px auto 0;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(174, 179, 187, 0.4);
+  color: #aeb3bb;
+  font-size: 13px;
+  transition:
+    color 150ms ease,
+    border-color 150ms ease;
+}
+
+.closing-cta-alt-link:hover {
+  color: var(--white);
+  border-color: var(--white);
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {
